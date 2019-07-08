@@ -1,0 +1,644 @@
+2019.05.26 at 08:54:09.435 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.05.26 at 08:54:09.998 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 35 test01 - inRoomInfoService=cn.com.djin.ssm.service.impl.InRoomInfoServiceImpl@2c78d320
+2019.05.26 at 08:59:29.541 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.05.26 at 08:59:30.615 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE 1 = 1 
+2019.05.26 at 08:59:30.641 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 
+2019.05.26 at 08:59:30.659 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2019.05.26 at 08:59:30.660 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12
+2019.05.26 at 08:59:30.661 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.05.26 at 08:59:30.673 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info where 1=1 limit ?,? 
+2019.05.26 at 08:59:30.675 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 0(Integer), 5(Integer)
+2019.05.26 at 08:59:30.677 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2019.05.26 at 08:59:30.686 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, ËµµÂ≠êÈæô, 1, 0, 411311199001015599, 13012345668, 200.00, 2018-09-06 20:19:03.0, 1, 1, 1
+2019.05.26 at 08:59:30.927 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, Âº†È£û, 1, 0, 411311199001015588, 13812345678, 249.00, 2018-09-05 20:20:01.0, 2, 1, 1
+2019.05.26 at 08:59:30.930 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, ÂàòÂ§á, 1, 0, 411311199001015577, 15912345612, 200.00, 2018-09-04 20:20:32.0, 3, 1, 1
+2019.05.26 at 08:59:30.935 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, ËØ∏Ëëõ‰∫Æ, 1, 0, 411311199001015522, 15912345611, 150.00, 2018-09-06 20:20:59.0, 4, 1, 1
+2019.05.26 at 08:59:30.937 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, ÊõπÊìç, 1, 0, 411311199001015566, 13912345622, 200.00, 2018-09-03 20:21:28.0, 5, 1, 1
+2019.05.26 at 08:59:30.939 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 5
+2019.05.26 at 08:59:30.941 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 49 test02 - ÊÄªÁöÑÊï∞ÊçÆÊù°Êï∞Ôºö12Êù°
+2019.05.26 at 08:59:30.942 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=1, customerName='ËµµÂ≠êÈæô', gender='1', isVip='0', idcard='411311199001015599', phone='13012345668', money=200.0, createDate=Thu Sep 06 20:19:03 CST 2018, roomId=1, status='1', outRoomStatus='1'}
+2019.05.26 at 08:59:30.955 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=1, roomNum='8201', roomStatus='2', roomTypeId=1}
+2019.05.26 at 08:59:30.962 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=1, roomTypeName='Âçï‰∫∫Èó¥', roomPrice=140.0}
+2019.05.26 at 08:59:30.964 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=2, customerName='Âº†È£û', gender='1', isVip='0', idcard='411311199001015588', phone='13812345678', money=249.0, createDate=Wed Sep 05 20:20:01 CST 2018, roomId=2, status='1', outRoomStatus='1'}
+2019.05.26 at 08:59:30.970 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=2, roomNum='8202', roomStatus='2', roomTypeId=1}
+2019.05.26 at 08:59:30.978 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=1, roomTypeName='Âçï‰∫∫Èó¥', roomPrice=140.0}
+2019.05.26 at 08:59:30.979 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=3, customerName='ÂàòÂ§á', gender='1', isVip='0', idcard='411311199001015577', phone='15912345612', money=200.0, createDate=Tue Sep 04 20:20:32 CST 2018, roomId=3, status='1', outRoomStatus='1'}
+2019.05.26 at 08:59:30.984 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=3, roomNum='8203', roomStatus='2', roomTypeId=1}
+2019.05.26 at 08:59:30.990 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=1, roomTypeName='Âçï‰∫∫Èó¥', roomPrice=140.0}
+2019.05.26 at 08:59:30.990 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=4, customerName='ËØ∏Ëëõ‰∫Æ', gender='1', isVip='0', idcard='411311199001015522', phone='15912345611', money=150.0, createDate=Thu Sep 06 20:20:59 CST 2018, roomId=4, status='1', outRoomStatus='1'}
+2019.05.26 at 08:59:30.999 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=4, roomNum='8204', roomStatus='2', roomTypeId=2}
+2019.05.26 at 08:59:31.027 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=2, roomTypeName='Âèå‰∫∫Èó¥', roomPrice=180.0}
+2019.05.26 at 08:59:31.027 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=5, customerName='ÊõπÊìç', gender='1', isVip='0', idcard='411311199001015566', phone='13912345622', money=200.0, createDate=Mon Sep 03 20:21:28 CST 2018, roomId=5, status='1', outRoomStatus='1'}
+2019.05.26 at 08:59:31.034 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=5, roomNum='82044', roomStatus='0', roomTypeId=2}
+2019.05.26 at 08:59:31.041 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=2, roomTypeName='Âèå‰∫∫Èó¥', roomPrice=180.0}
+2019.05.26 at 09:43:11.742 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.05.26 at 09:43:12.829 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE 1 = 1 
+2019.05.26 at 09:43:12.881 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 
+2019.05.26 at 09:43:12.913 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2019.05.26 at 09:43:12.913 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12
+2019.05.26 at 09:43:12.922 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.05.26 at 09:43:12.933 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info where 1=1 limit ?,? 
+2019.05.26 at 09:43:12.935 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 0(Integer), 5(Integer)
+2019.05.26 at 09:43:12.941 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2019.05.26 at 09:43:12.950 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, ËµµÂ≠êÈæô, 1, 0, 411311199001015599, 13012345668, 200.00, 2018-09-06 20:19:03.0, 1, 1, 1
+2019.05.26 at 09:43:13.187 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, Âº†È£û, 1, 0, 411311199001015588, 13812345678, 249.00, 2018-09-05 20:20:01.0, 2, 1, 1
+2019.05.26 at 09:43:13.189 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, ÂàòÂ§á, 1, 0, 411311199001015577, 15912345612, 200.00, 2018-09-04 20:20:32.0, 3, 1, 1
+2019.05.26 at 09:43:13.190 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, ËØ∏Ëëõ‰∫Æ, 1, 0, 411311199001015522, 15912345611, 150.00, 2018-09-06 20:20:59.0, 4, 1, 1
+2019.05.26 at 09:43:13.192 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, ÊõπÊìç, 1, 0, 411311199001015566, 13912345622, 200.00, 2018-09-03 20:21:28.0, 5, 1, 1
+2019.05.26 at 09:43:13.195 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 5
+2019.05.26 at 09:43:13.202 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 49 test02 - ÊÄªÁöÑÊï∞ÊçÆÊù°Êï∞Ôºö12Êù°
+2019.05.26 at 09:43:13.203 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=1, customerName='ËµµÂ≠êÈæô', gender='1', isVip='0', idcard='411311199001015599', phone='13012345668', money=200.0, createDate=Thu Sep 06 20:19:03 CST 2018, roomId=1, status='1', outRoomStatus='1'}
+2019.05.26 at 09:43:13.243 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=1, roomNum='8201', roomStatus='2', roomTypeId=1}
+2019.05.26 at 09:43:13.252 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=1, roomTypeName='Âçï‰∫∫Èó¥', roomPrice=140.0}
+2019.05.26 at 09:43:13.252 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=2, customerName='Âº†È£û', gender='1', isVip='0', idcard='411311199001015588', phone='13812345678', money=249.0, createDate=Wed Sep 05 20:20:01 CST 2018, roomId=2, status='1', outRoomStatus='1'}
+2019.05.26 at 09:43:13.285 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=2, roomNum='8202', roomStatus='2', roomTypeId=1}
+2019.05.26 at 09:43:13.289 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=1, roomTypeName='Âçï‰∫∫Èó¥', roomPrice=140.0}
+2019.05.26 at 09:43:13.290 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=3, customerName='ÂàòÂ§á', gender='1', isVip='0', idcard='411311199001015577', phone='15912345612', money=200.0, createDate=Tue Sep 04 20:20:32 CST 2018, roomId=3, status='1', outRoomStatus='1'}
+2019.05.26 at 09:43:13.294 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=3, roomNum='8203', roomStatus='2', roomTypeId=1}
+2019.05.26 at 09:43:13.300 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=1, roomTypeName='Âçï‰∫∫Èó¥', roomPrice=140.0}
+2019.05.26 at 09:43:13.301 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=4, customerName='ËØ∏Ëëõ‰∫Æ', gender='1', isVip='0', idcard='411311199001015522', phone='15912345611', money=150.0, createDate=Thu Sep 06 20:20:59 CST 2018, roomId=4, status='1', outRoomStatus='1'}
+2019.05.26 at 09:43:13.306 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=4, roomNum='8204', roomStatus='2', roomTypeId=2}
+2019.05.26 at 09:43:13.312 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=2, roomTypeName='Âèå‰∫∫Èó¥', roomPrice=180.0}
+2019.05.26 at 09:43:13.312 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 51 test02 - InRoomInfo{id=5, customerName='ÊõπÊìç', gender='1', isVip='0', idcard='411311199001015566', phone='13912345622', money=200.0, createDate=Mon Sep 03 20:21:28 CST 2018, roomId=5, status='1', outRoomStatus='1'}
+2019.05.26 at 09:43:13.317 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - Rooms{id=5, roomNum='82044', roomStatus='0', roomTypeId=2}
+2019.05.26 at 09:43:13.320 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - RoomType{id=2, roomTypeName='Âèå‰∫∫Èó¥', roomPrice=180.0}
+2019.05.26 at 11:14:37.530 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.05.26 at 11:14:39.008 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select count(0) from (select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info where 1=1 and customer_name LIKE concat('%',?,'%'))) tmp_count 
+2019.05.26 at 11:14:39.048 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: Ëµµ(String)
+2019.05.26 at 11:17:38.752 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.05.26 at 11:17:39.821 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE 1 = 1 AND customer_name LIKE concat('%', ?, '%') 
+2019.05.26 at 11:17:39.873 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: Ëµµ(String)
+2019.05.26 at 11:17:39.897 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2019.05.26 at 11:17:39.897 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1
+2019.05.26 at 11:17:39.899 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.05.26 at 11:17:39.910 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info where 1=1 and customer_name LIKE concat('%',?,'%') limit ?,? 
+2019.05.26 at 11:17:39.911 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: Ëµµ(String), 0(Integer), 5(Integer)
+2019.05.26 at 11:17:39.914 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2019.05.26 at 11:17:39.922 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, ËµµÂ≠êÈæô, 1, 0, 411311199001015599, 13012345668, 200.00, 2018-09-06 20:19:03.0, 1, 1, 1
+2019.05.26 at 11:17:40.084 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.05.26 at 11:17:40.089 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 50 test02 - ÊÄªÁöÑÊï∞ÊçÆÊù°Êï∞Ôºö1Êù°
+2019.05.26 at 11:17:40.091 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - InRoomInfo{id=1, customerName='ËµµÂ≠êÈæô', gender='1', isVip='0', idcard='411311199001015599', phone='13012345668', money=200.0, createDate=Thu Sep 06 20:19:03 CST 2018, roomId=1, status='1', outRoomStatus='1'}
+2019.05.26 at 11:17:40.175 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - Rooms{id=1, roomNum='8201', roomStatus='2', roomTypeId=1}
+2019.05.26 at 11:17:40.181 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 54 test02 - RoomType{id=1, roomTypeName='Âçï‰∫∫Èó¥', roomPrice=140.0}
+2019.05.26 at 11:18:13.909 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.05.26 at 11:18:14.960 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE 1 = 1 AND customer_name LIKE concat('%', ?, '%') 
+2019.05.26 at 11:18:14.998 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: Ëµµ(String)
+2019.05.26 at 11:18:15.022 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2019.05.26 at 11:18:15.023 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1
+2019.05.26 at 11:18:15.024 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.05.26 at 11:18:15.050 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info where 1=1 and customer_name LIKE concat('%',?,'%') limit ?,? 
+2019.05.26 at 11:18:15.052 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: Ëµµ(String), 0(Integer), 5(Integer)
+2019.05.26 at 11:18:15.056 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2019.05.26 at 11:18:15.080 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, ËµµÂ≠êÈæô, 1, 0, 411311199001015599, 13012345668, 200.00, 2018-09-06 20:19:03.0, 1, 1, 1
+2019.05.26 at 11:18:15.316 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.05.26 at 11:18:15.349 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 50 test02 - ÊÄªÁöÑÊï∞ÊçÆÊù°Êï∞Ôºö1Êù°
+2019.05.26 at 11:18:15.351 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - InRoomInfo{id=1, customerName='ËµµÂ≠êÈæô', gender='1', isVip='0', idcard='411311199001015599', phone='13012345668', money=200.0, createDate=Thu Sep 06 20:19:03 CST 2018, roomId=1, status='1', outRoomStatus='1'}
+2019.05.26 at 11:18:15.363 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - Rooms{id=1, roomNum='8201', roomStatus='2', roomTypeId=1}
+2019.05.26 at 11:18:15.371 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 54 test02 - RoomType{id=1, roomTypeName='Âçï‰∫∫Èó¥', roomPrice=140.0}
+2019.06.02 at 12:18:12.971 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.02 at 12:18:14.903 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.02 at 12:18:14.929 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.02 at 12:18:14.944 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.02 at 12:18:14.966 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.02 at 12:18:14.969 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.02 at 12:18:15.004 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.02 at 12:18:15.016 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.02 at 12:18:15.020 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.02 at 12:18:15.032 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.02 at 12:18:15.050 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.02 at 12:18:15.060 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.02 at 12:18:15.141 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 12:52:39.276 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 12:52:40.835 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 12:52:40.862 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 12:52:40.866 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 12:52:40.880 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 12:52:40.881 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 12:52:40.901 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 12:52:40.907 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 12:52:40.910 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 12:52:40.934 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 12:52:40.937 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 12:52:40.959 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 12:52:41.022 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 13:42:05.448 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 13:42:06.970 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 13:42:07.010 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 13:42:07.015 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 13:42:07.033 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 13:42:07.034 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 13:42:07.076 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 13:42:07.084 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 13:42:07.095 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 13:42:07.104 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 13:42:07.109 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 13:42:07.155 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 13:42:07.183 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:00:57.291 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:00:58.294 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:00:58.320 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:00:58.329 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:00:58.354 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:00:58.356 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:00:58.371 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:00:58.376 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:00:58.378 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:00:58.387 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:00:58.390 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:00:58.401 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:00:58.429 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:08:43.175 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:08:44.173 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:08:44.197 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:08:44.200 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:08:44.210 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:08:44.211 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:08:44.228 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:08:44.235 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:08:44.237 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:08:44.246 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:08:44.249 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:08:44.275 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:08:44.316 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:09:34.718 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:09:35.898 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:09:35.922 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:09:35.924 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:09:35.934 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:09:35.935 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:09:35.949 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:09:35.954 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:09:35.956 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:09:35.967 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:09:35.968 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), null, null, 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:09:35.982 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:09:36.010 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:11:48.727 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:11:50.604 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:11:50.642 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:11:50.646 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:11:50.660 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:11:50.661 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:11:50.693 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:11:50.703 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:11:50.706 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:11:50.721 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:11:50.731 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:11:50.742 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:11:50.771 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:13:34.922 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:13:36.073 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:13:36.109 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:13:36.123 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:13:36.137 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:13:36.138 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:13:36.161 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:13:36.170 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:13:36.173 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:13:36.186 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:13:36.193 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:13:36.197 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:13:36.219 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:14:59.582 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:15:00.560 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:15:00.591 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:15:00.600 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:15:00.618 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:15:00.619 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:15:00.635 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:15:00.644 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:15:00.649 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:15:00.655 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:15:00.657 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:15:00.729 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:15:00.764 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:18:03.954 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:18:04.847 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:18:04.874 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:18:04.887 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:18:04.899 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:18:04.900 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:18:04.914 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:18:04.922 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:18:04.924 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:18:04.935 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:18:04.939 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:18:04.942 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:18:04.969 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:19:20.768 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:19:21.675 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:19:21.705 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:19:21.724 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:19:21.738 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:19:21.738 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:19:21.755 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:19:21.762 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:19:21.764 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:19:21.774 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:19:21.778 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:19:21.782 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:19:21.809 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:21:21.170 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:21:22.145 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:21:22.180 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:21:22.245 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:21:22.282 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:21:22.283 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:21:22.305 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:21:22.311 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:21:22.313 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:21:22.322 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:21:22.324 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:21:22.328 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:21:22.370 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:24:39.406 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:24:40.614 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:24:40.654 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:24:40.666 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:24:40.677 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:24:40.678 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:24:40.698 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:24:40.706 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:24:40.709 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:24:40.717 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:24:40.720 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:24:40.733 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:24:40.751 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:25:33.384 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:25:34.427 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:25:34.470 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:25:34.535 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:25:34.550 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:25:34.551 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:25:34.572 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:25:34.583 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:25:34.586 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:25:34.596 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:25:34.599 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:25:34.609 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:25:34.636 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:37:44.426 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:37:45.565 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:37:45.589 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:37:45.595 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:37:45.607 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:37:45.608 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:37:45.629 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:37:45.637 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:37:45.639 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:40:15.072 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:40:15.979 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:40:16.009 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:40:16.051 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:40:16.082 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:40:16.083 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:40:16.108 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:40:16.114 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:40:16.117 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:40:16.126 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:40:16.130 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2011-01-13(Date), 2011-01-13(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:40:16.133 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:40:16.156 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:41:21.469 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:41:22.441 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:41:22.472 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:41:22.485 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:41:22.495 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:41:22.496 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:41:22.515 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:41:22.524 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:41:22.526 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:41:22.540 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:41:22.548 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:41:22.552 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:41:22.582 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:42:36.371 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:42:37.277 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:42:37.308 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:42:37.321 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:42:37.335 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:42:37.336 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:42:37.352 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:42:37.359 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:42:37.361 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:42:37.370 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:42:37.375 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-02(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:42:37.387 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:42:37.422 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:43:19.413 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:43:20.719 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:43:20.744 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:43:20.788 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:43:20.822 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:43:20.824 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:43:20.844 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:43:20.853 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:43:20.855 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:43:20.865 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:43:20.874 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-03(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:43:21.047 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:43:21.085 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:44:03.420 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:44:04.389 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:44:04.417 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:44:04.433 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:44:04.460 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:44:04.461 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:44:04.482 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:44:04.488 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:44:04.490 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:44:04.496 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:44:04.499 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19(Date), 2019-06-03(Date), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:44:04.504 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:44:04.524 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.03 at 23:52:17.587 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.03 at 23:52:18.534 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.03 at 23:52:18.567 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.03 at 23:52:18.612 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:52:18.659 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.03 at 23:52:18.661 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.03 at 23:52:18.685 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.06.03 at 23:52:18.693 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ‰Ω†Âè∑, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Áéã‰∫åÈ∫ªÂ≠ê,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.06.03 at 23:52:18.696 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.03 at 23:52:18.704 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.06.03 at 23:52:18.707 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Áéã‰∫åÈ∫ªÂ≠ê(String), 2019-04-19 11:36:37.0(Timestamp), 2019-06-02 11:07:56.0(Timestamp), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.06.03 at 23:52:18.711 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.06.03 at 23:52:18.742 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
+2019.06.10 at 13:52:07.427 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.10 at 13:52:08.873 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.10 at 13:52:08.900 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2019.06.10 at 13:52:08.917 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.10 at 13:52:08.917 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, ÂÖ•‰ΩèÁÆ°ÁêÜ, #, 0, 0
+2019.06.10 at 13:52:08.919 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, ËÆ¢ÂçïÁÆ°ÁêÜ, #, 0, 0
+2019.06.10 at 13:52:08.920 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, ‰ºöÂëòÁÆ°ÁêÜ, #, 0, 0
+2019.06.10 at 13:52:08.920 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, ÂÆ¢ÊàøÁÆ°ÁêÜ, #, 0, 0
+2019.06.10 at 13:52:08.922 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, ÂÆ¢‰∫∫ÊÑèËßÅ, #, 0, 0
+2019.06.10 at 13:52:08.922 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 5
+2019.06.10 at 13:53:06.132 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.10 at 13:53:07.289 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.10 at 13:53:07.314 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2019.06.10 at 13:53:07.333 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.10 at 13:53:07.334 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, ÂÖ•‰ΩèÁÆ°ÁêÜ, #, 0, 0
+2019.06.10 at 13:53:07.336 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, ËÆ¢ÂçïÁÆ°ÁêÜ, #, 0, 0
+2019.06.10 at 13:53:07.336 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, ‰ºöÂëòÁÆ°ÁêÜ, #, 0, 0
+2019.06.10 at 13:53:07.337 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, ÂÆ¢ÊàøÁÆ°ÁêÜ, #, 0, 0
+2019.06.10 at 13:53:07.338 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, ÂÆ¢‰∫∫ÊÑèËßÅ, #, 0, 0
+2019.06.10 at 13:53:07.338 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 5
+2019.06.10 at 13:53:07.386 CST INFO  cn.com.djin.ssm.test.AuthorityServiceTest 43 test01 - [{aPName=ÂÖ•‰ΩèÁÆ°ÁêÜ, cAuthoritys=[cn.com.djin.ssm.entity.Authority@50ecde95, cn.com.djin.ssm.entity.Authority@35a9782c, cn.com.djin.ssm.entity.Authority@70a36a66, cn.com.djin.ssm.entity.Authority@45815ffc, cn.com.djin.ssm.entity.Authority@732f29af]}, {aPName=ËÆ¢ÂçïÁÆ°ÁêÜ, cAuthoritys=[cn.com.djin.ssm.entity.Authority@50ecde95, cn.com.djin.ssm.entity.Authority@35a9782c, cn.com.djin.ssm.entity.Authority@70a36a66, cn.com.djin.ssm.entity.Authority@45815ffc, cn.com.djin.ssm.entity.Authority@732f29af]}, {aPName=‰ºöÂëòÁÆ°ÁêÜ, cAuthoritys=[cn.com.djin.ssm.entity.Authority@50ecde95, cn.com.djin.ssm.entity.Authority@35a9782c, cn.com.djin.ssm.entity.Authority@70a36a66, cn.com.djin.ssm.entity.Authority@45815ffc, cn.com.djin.ssm.entity.Authority@732f29af]}, {aPName=ÂÆ¢ÊàøÁÆ°ÁêÜ, cAuthoritys=[cn.com.djin.ssm.entity.Authority@50ecde95, cn.com.djin.ssm.entity.Authority@35a9782c, cn.com.djin.ssm.entity.Authority@70a36a66, cn.com.djin.ssm.entity.Authority@45815ffc, cn.com.djin.ssm.entity.Authority@732f29af]}, {aPName=ÂÆ¢‰∫∫ÊÑèËßÅ, cAuthoritys=[cn.com.djin.ssm.entity.Authority@50ecde95, cn.com.djin.ssm.entity.Authority@35a9782c, cn.com.djin.ssm.entity.Authority@70a36a66, cn.com.djin.ssm.entity.Authority@45815ffc, cn.com.djin.ssm.entity.Authority@732f29af]}]
+2019.06.13 at 23:44:29.632 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.13 at 23:44:31.349 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.13 at 23:44:31.379 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2019.06.13 at 23:44:31.401 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.13 at 23:44:31.402 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, »Î◊°π‹¿Ì, #, 0, 0
+2019.06.13 at 23:44:31.405 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, ∂©µ•π‹¿Ì, #, 0, 0
+2019.06.13 at 23:44:31.406 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, ª·‘±π‹¿Ì, #, 0, 0
+2019.06.13 at 23:44:31.408 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, øÕ∑øπ‹¿Ì, #, 0, 0
+2019.06.13 at 23:44:31.409 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, œµÕ≥”√ªßπ‹¿Ì, #, 0, 0
+2019.06.13 at 23:44:31.410 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, øÕ»À“‚º˚, #, 0, 0
+2019.06.13 at 23:44:31.412 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2019.06.13 at 23:44:31.419 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.13 at 23:44:31.420 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2019.06.13 at 23:44:31.422 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.13 at 23:44:31.423 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 11, »Î◊°–≈œ¢π‹¿Ì, model/toShowInRoomInfo, 1, 0
+2019.06.13 at 23:44:31.425 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, »Î◊°–≈œ¢ÃÌº”, model/toSaveInRoomInfo, 1, 0
+2019.06.13 at 23:44:31.426 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, œ˚∑—º«¬º, model/toShowRoomSale, 1, 0
+2019.06.13 at 23:44:31.427 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2019.06.13 at 23:44:31.427 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.13 at 23:44:31.429 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2019.06.13 at 23:44:31.431 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.13 at 23:44:31.434 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, ∂©µ•≤È—Ø, model/toShowOrders, 2, 0
+2019.06.13 at 23:44:31.438 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.13 at 23:44:31.439 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.13 at 23:44:31.441 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2019.06.13 at 23:44:31.443 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.13 at 23:44:31.443 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 31, ª·‘±–≈œ¢π‹¿Ì, model/toShowVip, 3, 0
+2019.06.13 at 23:44:31.444 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 32, ÃÌº”ª·‘±, model/toSaveVip, 3, 0
+2019.06.13 at 23:44:31.445 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2019.06.13 at 23:44:31.446 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.13 at 23:44:31.447 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2019.06.13 at 23:44:31.449 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.13 at 23:44:31.450 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 41, øÕ∑ø–≈œ¢π‹¿Ì, model/toShowRooms, 4, 0
+2019.06.13 at 23:44:31.452 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 42, ∑ø–Õ–≈œ¢π‹¿Ì, model/toShowRoomType, 4, 0
+2019.06.13 at 23:44:31.453 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2019.06.13 at 23:44:31.453 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.13 at 23:44:31.454 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2019.06.13 at 23:44:31.457 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.13 at 23:44:31.458 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 51, Ω«…´–≈œ¢π‹¿Ì, role/toShowRole, 5, 0
+2019.06.13 at 23:44:31.459 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 52, ”√ªß–≈œ¢π‹¿Ì, model/toShowUser, 5, 0
+2019.06.13 at 23:44:31.461 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 53, ÃÌº””√ªß, model/toSaveUser, 5, 0
+2019.06.13 at 23:44:31.462 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2019.06.13 at 23:44:31.463 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.13 at 23:44:31.463 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2019.06.13 at 23:44:31.466 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.13 at 23:44:31.466 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 61, øÕ»À“‚º˚, model/toShowIdd, 6, 0
+2019.06.13 at 23:44:31.467 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.13 at 23:44:31.486 CST INFO  cn.com.djin.ssm.test.AuthorityServiceTest 43 test01 - [{aPId=1, aPName=»Î◊°π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@3f07b12c, cn.com.djin.ssm.entity.Authority@4bd1f8dd, cn.com.djin.ssm.entity.Authority@7096b474]}, {aPId=2, aPName=∂©µ•π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@3e14c16d]}, {aPId=3, aPName=ª·‘±π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@3c989952, cn.com.djin.ssm.entity.Authority@784b990c]}, {aPId=4, aPName=øÕ∑øπ‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@3d3ba765, cn.com.djin.ssm.entity.Authority@25bc0606]}, {aPId=5, aPName=œµÕ≥”√ªßπ‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@5d1659ea, cn.com.djin.ssm.entity.Authority@793138bd, cn.com.djin.ssm.entity.Authority@1951b871]}, {aPId=6, aPName=øÕ»À“‚º˚, cAuthoritys=[cn.com.djin.ssm.entity.Authority@5c18016b]}]
+2019.06.13 at 23:44:31.792 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.13 at 23:44:32.103 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 39 test01 - inRoomInfoService=cn.com.djin.ssm.service.impl.InRoomInfoServiceImpl@60d1a32f
+2019.06.13 at 23:44:32.268 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.13 at 23:44:32.581 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE 1 = 1 AND customer_name LIKE concat('%', ?, '%') 
+2019.06.13 at 23:44:32.582 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: ’‘(String)
+2019.06.13 at 23:44:32.687 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2019.06.13 at 23:44:32.688 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 0
+2019.06.13 at 23:44:32.690 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.13 at 23:44:32.692 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 50 test02 - ◊‹µƒ ˝æ›Ãı ˝£∫0Ãı
+2019.06.13 at 23:44:33.073 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.13 at 23:44:33.399 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.13 at 23:44:33.400 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.13 at 23:44:33.417 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 0
+2019.06.13 at 23:44:33.419 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.13 at 23:44:33.420 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.13 at 23:44:33.423 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 0
+2019.06.14 at 12:31:09.731 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.14 at 12:31:10.790 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 12:31:10.816 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2019.06.14 at 12:31:10.839 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 12:31:10.840 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, »Î◊°π‹¿Ì, #, 0, 0
+2019.06.14 at 12:31:10.845 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, ∂©µ•π‹¿Ì, #, 0, 0
+2019.06.14 at 12:31:10.850 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, ª·‘±π‹¿Ì, #, 0, 0
+2019.06.14 at 12:31:10.851 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, øÕ∑øπ‹¿Ì, #, 0, 0
+2019.06.14 at 12:31:10.852 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, œµÕ≥”√ªßπ‹¿Ì, #, 0, 0
+2019.06.14 at 12:31:10.853 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, øÕ»À“‚º˚, #, 0, 0
+2019.06.14 at 12:31:10.861 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2019.06.14 at 12:31:10.868 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 12:31:10.869 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2019.06.14 at 12:31:10.872 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 12:31:10.874 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 11, »Î◊°–≈œ¢π‹¿Ì, model/toShowInRoomInfo, 1, 0
+2019.06.14 at 12:31:10.876 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, »Î◊°–≈œ¢ÃÌº”, model/toSaveInRoomInfo, 1, 0
+2019.06.14 at 12:31:10.877 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, œ˚∑—º«¬º, model/toShowRoomSale, 1, 0
+2019.06.14 at 12:31:10.878 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2019.06.14 at 12:31:10.879 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 12:31:10.879 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2019.06.14 at 12:31:10.881 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 12:31:10.882 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, ∂©µ•≤È—Ø, model/toShowOrders, 2, 0
+2019.06.14 at 12:31:10.883 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.14 at 12:31:10.884 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 12:31:10.885 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2019.06.14 at 12:31:10.886 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 12:31:10.888 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 31, ª·‘±–≈œ¢π‹¿Ì, model/toShowVip, 3, 0
+2019.06.14 at 12:31:10.889 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 32, ÃÌº”ª·‘±, model/toSaveVip, 3, 0
+2019.06.14 at 12:31:10.889 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2019.06.14 at 12:31:10.890 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 12:31:10.891 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2019.06.14 at 12:31:10.893 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 12:31:10.894 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 41, øÕ∑ø–≈œ¢π‹¿Ì, model/toShowRooms, 4, 0
+2019.06.14 at 12:31:10.894 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 42, ∑ø–Õ–≈œ¢π‹¿Ì, model/toShowRoomType, 4, 0
+2019.06.14 at 12:31:10.897 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2019.06.14 at 12:31:10.898 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 12:31:10.899 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2019.06.14 at 12:31:10.901 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 12:31:10.901 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 51, Ω«…´–≈œ¢π‹¿Ì, role/toShowRole, 5, 0
+2019.06.14 at 12:31:10.902 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 52, ”√ªß–≈œ¢π‹¿Ì, model/toShowUser, 5, 0
+2019.06.14 at 12:31:10.904 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 53, ÃÌº””√ªß, model/toSaveUser, 5, 0
+2019.06.14 at 12:31:10.907 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2019.06.14 at 12:31:10.908 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 12:31:10.909 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2019.06.14 at 12:31:10.912 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 12:31:10.913 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 61, øÕ»À“‚º˚, model/toShowIdd, 6, 0
+2019.06.14 at 12:31:10.914 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.14 at 12:31:10.918 CST INFO  cn.com.djin.ssm.test.AuthorityServiceTest 43 test01 - [{aPId=1, aPName=»Î◊°π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@6475472c, cn.com.djin.ssm.entity.Authority@3f07b12c, cn.com.djin.ssm.entity.Authority@4bd1f8dd]}, {aPId=2, aPName=∂©µ•π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@7096b474]}, {aPId=3, aPName=ª·‘±π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@3e14c16d, cn.com.djin.ssm.entity.Authority@3c989952]}, {aPId=4, aPName=øÕ∑øπ‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@784b990c, cn.com.djin.ssm.entity.Authority@3d3ba765]}, {aPId=5, aPName=œµÕ≥”√ªßπ‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@25bc0606, cn.com.djin.ssm.entity.Authority@5d1659ea, cn.com.djin.ssm.entity.Authority@793138bd]}, {aPId=6, aPName=øÕ»À“‚º˚, cAuthoritys=[cn.com.djin.ssm.entity.Authority@1951b871]}]
+2019.06.14 at 12:31:11.470 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.14 at 12:31:11.811 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 39 test01 - inRoomInfoService=cn.com.djin.ssm.service.impl.InRoomInfoServiceImpl@75e91545
+2019.06.14 at 12:31:12.087 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.14 at 12:31:12.612 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE 1 = 1 AND customer_name LIKE concat('%', ?, '%') 
+2019.06.14 at 12:31:12.614 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: ’‘(String)
+2019.06.14 at 12:31:12.664 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2019.06.14 at 12:31:12.664 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 0
+2019.06.14 at 12:31:12.665 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.14 at 12:31:12.665 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 50 test02 - ◊‹µƒ ˝æ›Ãı ˝£∫0Ãı
+2019.06.14 at 12:31:12.869 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.14 at 12:31:13.056 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.14 at 12:31:13.057 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.14 at 12:31:13.080 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 0
+2019.06.14 at 12:31:13.084 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.14 at 12:31:13.085 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.14 at 12:31:13.087 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 0
+2019.06.14 at 14:36:09.867 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.14 at 14:36:11.572 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 14:36:11.612 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2019.06.14 at 14:36:11.653 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 14:36:11.654 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, »Î◊°π‹¿Ì, #, 0, 0
+2019.06.14 at 14:36:11.660 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, ∂©µ•π‹¿Ì, #, 0, 0
+2019.06.14 at 14:36:11.661 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, ª·‘±π‹¿Ì, #, 0, 0
+2019.06.14 at 14:36:11.662 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, øÕ∑øπ‹¿Ì, #, 0, 0
+2019.06.14 at 14:36:11.663 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, œµÕ≥”√ªßπ‹¿Ì, #, 0, 0
+2019.06.14 at 14:36:11.665 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, øÕ»À“‚º˚, #, 0, 0
+2019.06.14 at 14:36:11.666 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2019.06.14 at 14:36:11.673 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 14:36:11.674 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2019.06.14 at 14:36:11.677 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 14:36:11.678 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 11, »Î◊°–≈œ¢π‹¿Ì, model/toShowInRoomInfo, 1, 0
+2019.06.14 at 14:36:11.679 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, »Î◊°–≈œ¢ÃÌº”, model/toSaveInRoomInfo, 1, 0
+2019.06.14 at 14:36:11.680 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, œ˚∑—º«¬º, model/toShowRoomSale, 1, 0
+2019.06.14 at 14:36:11.681 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2019.06.14 at 14:36:11.682 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 14:36:11.683 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2019.06.14 at 14:36:11.685 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 14:36:11.686 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, ∂©µ•≤È—Ø, model/toShowOrders, 2, 0
+2019.06.14 at 14:36:11.687 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.14 at 14:36:11.688 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 14:36:11.689 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2019.06.14 at 14:36:11.691 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 14:36:11.692 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 31, ª·‘±–≈œ¢π‹¿Ì, model/toShowVip, 3, 0
+2019.06.14 at 14:36:11.693 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 32, ÃÌº”ª·‘±, model/toSaveVip, 3, 0
+2019.06.14 at 14:36:11.694 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2019.06.14 at 14:36:11.695 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 14:36:11.696 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2019.06.14 at 14:36:11.698 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 14:36:11.699 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 41, øÕ∑ø–≈œ¢π‹¿Ì, model/toShowRooms, 4, 0
+2019.06.14 at 14:36:11.700 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 42, ∑ø–Õ–≈œ¢π‹¿Ì, model/toShowRoomType, 4, 0
+2019.06.14 at 14:36:11.700 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2019.06.14 at 14:36:11.701 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 14:36:11.702 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2019.06.14 at 14:36:11.704 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 14:36:11.705 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 51, Ω«…´–≈œ¢π‹¿Ì, role/toShowRole, 5, 0
+2019.06.14 at 14:36:11.706 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 52, ”√ªß–≈œ¢π‹¿Ì, model/toShowUser, 5, 0
+2019.06.14 at 14:36:11.708 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 53, ÃÌº””√ªß, model/toSaveUser, 5, 0
+2019.06.14 at 14:36:11.709 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2019.06.14 at 14:36:11.710 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.06.14 at 14:36:11.711 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2019.06.14 at 14:36:11.713 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.06.14 at 14:36:11.714 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 61, øÕ»À“‚º˚, model/toShowIdd, 6, 0
+2019.06.14 at 14:36:11.715 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.14 at 14:36:11.723 CST INFO  cn.com.djin.ssm.test.AuthorityServiceTest 43 test01 - [{aPId=1, aPName=»Î◊°π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@6475472c, cn.com.djin.ssm.entity.Authority@3f07b12c, cn.com.djin.ssm.entity.Authority@4bd1f8dd]}, {aPId=2, aPName=∂©µ•π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@7096b474]}, {aPId=3, aPName=ª·‘±π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@3e14c16d, cn.com.djin.ssm.entity.Authority@3c989952]}, {aPId=4, aPName=øÕ∑øπ‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@784b990c, cn.com.djin.ssm.entity.Authority@3d3ba765]}, {aPId=5, aPName=œµÕ≥”√ªßπ‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@25bc0606, cn.com.djin.ssm.entity.Authority@5d1659ea, cn.com.djin.ssm.entity.Authority@793138bd]}, {aPId=6, aPName=øÕ»À“‚º˚, cAuthoritys=[cn.com.djin.ssm.entity.Authority@1951b871]}]
+2019.06.14 at 14:36:12.120 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.14 at 14:36:12.525 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 39 test01 - inRoomInfoService=cn.com.djin.ssm.service.impl.InRoomInfoServiceImpl@75e91545
+2019.06.14 at 14:36:12.972 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.14 at 14:36:13.438 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE 1 = 1 AND customer_name LIKE concat('%', ?, '%') 
+2019.06.14 at 14:36:13.441 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: ’‘(String)
+2019.06.14 at 14:36:13.465 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2019.06.14 at 14:36:13.466 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 0
+2019.06.14 at 14:36:13.467 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.06.14 at 14:36:13.468 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 50 test02 - ◊‹µƒ ˝æ›Ãı ˝£∫0Ãı
+2019.06.14 at 14:36:13.802 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.06.14 at 14:36:14.245 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.06.14 at 14:36:14.246 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.06.14 at 14:36:14.250 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 0
+2019.06.14 at 14:36:14.252 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.06.14 at 14:36:14.252 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.06.14 at 14:36:14.254 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 0
+2019.07.05 at 11:24:34.416 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.07.05 at 11:24:36.486 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.07.05 at 11:24:36.505 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2019.07.05 at 11:24:36.621 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.07.05 at 11:24:36.621 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, »Î◊°π‹¿Ì, #, 0, 0
+2019.07.05 at 11:24:36.624 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, ∂©µ•π‹¿Ì, #, 0, 0
+2019.07.05 at 11:24:36.624 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, ª·‘±π‹¿Ì, #, 0, 0
+2019.07.05 at 11:24:36.625 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, øÕ∑øπ‹¿Ì, #, 0, 0
+2019.07.05 at 11:24:36.625 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, œµÕ≥”√ªßπ‹¿Ì, #, 0, 0
+2019.07.05 at 11:24:36.626 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, øÕ»À“‚º˚, #, 0, 0
+2019.07.05 at 11:24:36.627 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2019.07.05 at 11:24:36.632 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.07.05 at 11:24:36.633 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2019.07.05 at 11:24:36.635 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.07.05 at 11:24:36.640 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, »Î◊°–≈œ¢ÃÌº”, model/toSaveInRoomInfo, 1, 0
+2019.07.05 at 11:24:36.641 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, œ˚∑—º«¬º, model/toShowRoomSale, 1, 0
+2019.07.05 at 11:24:36.642 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2019.07.05 at 11:24:36.643 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.07.05 at 11:24:36.643 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2019.07.05 at 11:24:36.644 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2019.07.05 at 11:24:36.645 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, ∂©µ•≤È—Ø, model/toShowOrders, 2, 0
+2019.07.05 at 11:24:36.645 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.07.05 at 11:24:36.646 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.07.05 at 11:24:36.650 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2019.07.05 at 11:24:36.653 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 0
+2019.07.05 at 11:24:36.654 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.07.05 at 11:24:36.655 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2019.07.05 at 11:24:36.656 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 0
+2019.07.05 at 11:24:36.656 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.07.05 at 11:24:36.657 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2019.07.05 at 11:24:36.658 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 0
+2019.07.05 at 11:24:36.659 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag from system_authority where id in(SELECT auth_id from role_auth where role_id=?) and parent=? and flag=0 
+2019.07.05 at 11:24:36.660 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2019.07.05 at 11:24:36.662 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 0
+2019.07.05 at 11:24:36.697 CST INFO  cn.com.djin.ssm.test.AuthorityServiceTest 43 test01 - [{aPId=1, aPName=»Î◊°π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@5c42d2b7, cn.com.djin.ssm.entity.Authority@625abb97]}, {aPId=2, aPName=∂©µ•π‹¿Ì, cAuthoritys=[cn.com.djin.ssm.entity.Authority@5b1f29fa]}, {aPId=3, aPName=ª·‘±π‹¿Ì, cAuthoritys=[]}, {aPId=4, aPName=øÕ∑øπ‹¿Ì, cAuthoritys=[]}, {aPId=5, aPName=œµÕ≥”√ªßπ‹¿Ì, cAuthoritys=[]}, {aPId=6, aPName=øÕ»À“‚º˚, cAuthoritys=[]}]
+2019.07.05 at 11:24:36.917 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.07.05 at 11:24:37.319 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 39 test01 - inRoomInfoService=cn.com.djin.ssm.service.impl.InRoomInfoServiceImpl@41813449
+2019.07.05 at 11:24:37.655 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.07.05 at 11:24:38.227 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE 1 = 1 AND customer_name LIKE concat('%', ?, '%') 
+2019.07.05 at 11:24:38.255 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: ’‘(String)
+2019.07.05 at 11:24:38.305 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2019.07.05 at 11:24:38.306 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1
+2019.07.05 at 11:24:38.307 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.07.05 at 11:24:38.310 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info where 1=1 and customer_name LIKE concat('%',?,'%') order by create_date desc limit ?,? 
+2019.07.05 at 11:24:38.313 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: ’‘(String), 0(Integer), 5(Integer)
+2019.07.05 at 11:24:38.322 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2019.07.05 at 11:24:38.331 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, ’‘◊”¡˙, 1, 0, 411311199001015599, 13012345668, 200.00, 2018-09-06 20:19:03.0, 1, 1, 1
+2019.07.05 at 11:24:38.516 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.07.05 at 11:24:38.517 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 50 test02 - ◊‹µƒ ˝æ›Ãı ˝£∫1Ãı
+2019.07.05 at 11:24:38.517 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 52 test02 - InRoomInfo{id=1, customerName='’‘◊”¡˙', gender='1', isVip='0', idcard='411311199001015599', phone='13012345668', money=200.0, createDate=Thu Sep 06 20:19:03 CST 2018, roomId=1, status='1', outRoomStatus='1'}
+2019.07.05 at 11:24:38.706 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 53 test02 - Rooms{id=1, roomNum='8201', roomStatus='2', roomTypeId=1, roomType=RoomType{id=1, roomTypeName='µ•»Àº‰', roomPrice=140.0}}
+2019.07.05 at 11:24:38.730 CST INFO  cn.com.djin.ssm.test.InRoomInfoServiceTest 54 test02 - RoomType{id=1, roomTypeName='µ•»Àº‰', roomPrice=140.0}
+2019.07.05 at 11:24:38.912 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019.07.05 at 11:24:39.305 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: update orders SET order_status = ? where order_num = ? 
+2019.07.05 at 11:24:39.307 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(String), 20190602110756426289(String)
+2019.07.05 at 11:24:39.358 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.07.05 at 11:24:39.362 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, order_num, order_money, remark, order_status, iri_id, create_date, flag,order_other,order_price from orders where 1=1 and order_num = ? 
+2019.07.05 at 11:24:39.364 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 20190602110756426289(String)
+2019.07.05 at 11:24:39.367 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, order_num, order_money, remark, order_status, iri_id, create_date, flag, order_other, order_price
+2019.07.05 at 11:24:39.369 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 22, 20190602110756426289, 11178.00, ƒ„∫≈, 1, 15, 2019-06-02 11:07:56.0, 1, 8212,Õı∂˛¬È◊”,2019/04/19 11:36:37,2019/06/02 11:07:56,44, 280,90,11088
+2019.07.05 at 11:24:39.370 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2019.07.05 at 11:24:39.384 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: insert into roomsale (id, room_num, customer_name, start_date, end_date, days, room_price, rent_price, other_price, sale_price, discount_price) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019.07.05 at 11:24:39.405 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: null, 8212(String), Õı∂˛¬È◊”(String), 2019-04-19 11:36:37.0(Timestamp), 2019-06-02 11:07:56.0(Timestamp), 44(Integer), 280.0(Double), 11088.0(Double), 90.0(Double), 11178.0(Double), 0.0(Double)
+2019.07.05 at 11:24:39.421 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==    Updates: 1
+2019.07.05 at 11:24:39.483 CST INFO  cn.com.djin.ssm.test.OrdersServiceTest 41 test01 - success
